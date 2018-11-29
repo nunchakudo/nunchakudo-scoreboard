@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- scoreboard admin side -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <style>
+      h1{
+        clear: none;
+      }
+    </style>
+
+  </head>
+  <body page="admin" style="font-size:50%;">
+    <header></header>
+    <div class="container-fluid">
+      <div class = "row">
+                <div class = "col-6"><h2 class="black-color" id="name-Yellow">YELLOW</h2></div>
+                <div class = "col-6"><h2 class="yellow-color" id="name-Black">BLACK</h2></div>
+       </div>
+    </div>
+    <div id="scoreboard">
+      <section id="scoring">
+        <div class="container">
+          <div class="card bg-faded mb-1">
+            <div class="card-body p-1">
+              <div class = "row">
+                <div class = "col-sm-1"></div>
+                <div class = "col-sm-10"><h1 id="event-name" contenteditable>EVENEMENT NAAM</h1> </div>
+                <div class = "col-sm-1"></div>
+              </div>
+	      
+              <div class="row">
+                <div class = "col-4 col-sm-3">
+                  <h1 id="waza-ari-1">0</h1>
+                  <button class="btn btn-success" data-entry="waza-ari" data-player=1 data-action='+'>+</button>
+                  <button class="btn btn-warning" data-entry="waza-ari" data-player=1 data-action='-'>-</button>
+                </div>
+                <div class = "col-4 col-sm-6"><h1>WAZA-ARI</h1> </div>
+                <div class = "col-4 col-sm-3">
+                  <h1 id="waza-ari-2">0</h1>
+                  <button class="btn btn-success" data-entry="waza-ari" data-player=2 data-action='+'>+</button>
+                  <button class="btn btn-warning" data-entry="waza-ari" data-player=2 data-action='-'>-</button>
+                </div>
+              </div>
+
+              <div class = "row">
+                <div class = "col-4 col-sm-3">
+                  <h1 id="ippon-1">0</h1>
+                  <button class="btn btn-success" data-entry="ippon" data-player=1 data-action='+'>+</button>
+                  <button class="btn btn-warning" data-entry="ippon" data-player=1 data-action='-'>-</button>
+                </div>
+                <div class = "col-4 col-sm-6"><h1>IPPON</h1> </div>
+                <div class = "col-4 col-sm-3">
+                  <h1 id="ippon-2">0</h1>
+                  <button class="btn btn-success" data-entry="ippon" data-player=2 data-action='+'>+</button>
+                  <button class="btn btn-warning" data-entry="ippon" data-player=2 data-action='-'>-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer" style="clear:both; height: 1em;"></div>
+
+        <div class="container">
+          <div class="card bg-faded pt-3 pb-3">
+            <div class="card-body">
+              <div class = "row">
+                <div class="col-4 col-sm-3">
+                  <h1 id="straf-1" class="text-right">0</h1>
+                  <button class="btn btn-success" data-entry="straf" data-player=1 data-action='+'>+</button>
+                  <button class="btn btn-danger" data-entry="straf" data-player=1 data-action='-'>-</button>
+                </div>
+                <div class="col-4 col-sm-6"><h1>STRAF</h1></div>
+                <div class="col-4 col-sm-3">
+                  <h1 id="straf-2">0</h1>
+                  <button class="btn btn-success" data-entry="straf" data-player=2 data-action='+'>+</button>
+                  <button class="btn btn-danger" data-entry="straf" data-player=2 data-action='-'>-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="spacer" style="clear:both; height: 1em;"></div>
+
+      <section id="timing">
+        <div class="container">
+          <div class="card bg-faded pt-3 pb-3">
+            <div class="card-body">
+              <div class = "row">
+                <div class="col-4 text-right">
+                  <button class="btn btn-success" id="startPause">Start</button>
+                </div>
+                <div class = "col-4" style=" text-align: center;"><h1>TIJD</h1> </div>
+                <div class="col-4 text-left">
+                  <button class="btn btn-danger" id="reset">Reset</button>
+                </div>
+              </div>
+              <div class = "row">
+				<div class="col-4 text-right">
+                  <button class="btn btn-success" id="ExtraTime">+1 Min</button>
+                </div>
+                <div class = "col-4" style=" text-align: center;"><h1 id="timefield-wrapper">2:40</h1> </div>
+              </div>
+              <div class="row">
+                 <div class="col-12">
+                  <button class="btn btn-block btn-sm btn-primary" id="save">Save</button>
+                </div>
+
+              </div>
+              <hr/>
+              <div class="row">
+                <div class = "col-4 offset-4" style=" text-align: center;"><h1 id="timer">Match tijd</h1> </div>
+              </div>
+              <div class="row">
+                <div class = "col-5 text-right">
+                  <h1 id="time-min">0</h1>
+                  <button class="btn btn-success" data-entry="time-min" data-action='+'>+1</button>
+                  <button class="btn btn-danger" data-entry="time-min" data-action='-'>-1</button>
+                </div>
+                <div class = "col-2 text-center">
+                  <h1>:</h1>
+                </div>
+                <div class = "col-5">
+                  <h1 id="time-sec" class="text-left">0</h1>
+                  <button class="btn btn-success" data-entry="time-sec" data-action='+'>+5</button>
+                  <button class="btn btn-danger" data-entry="time-sec" data-action='-'>-5</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer></footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="../vendor/js/jquery-3.1.1.min.js"></script>
+    <script src="../vendor/js/tether.min.js"></script>
+    <script src="../vendor/js/bootstrap.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="../js/custom.js"></script>
+    <script src="../js/admin.js"></script>
+
+  </body>
+</html>

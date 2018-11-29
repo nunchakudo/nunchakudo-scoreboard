@@ -1,0 +1,86 @@
+// Global variables
+      
+      //initialize the system
+      function initialize(){
+        // Once, get the name of the event
+        $.getJSON( "http://"+window.location.host+":3000/event", function( event ) {
+          $("#event-name").html( event.name );
+        });
+
+        // Every second, get the state from the server!
+        setInterval(getUpdatedState, 1000);
+      }
+     function handleVoegtoeEvents(){
+         $('#voeg-toe').click(function(e){
+    
+            var parName       = $('#name').text();
+            var parCategory      = $('#category').val();
+            if(parCategory==="Choose...")
+                parCategory=0;
+            console.log(parName + "cat:" + parCategory);
+            $.getJSON( "http://"+window.location.host+":3000/participants",function( participants ) {
+                var participants = [];
+                participants.push({"name":parName,"category":parCategory});
+                // update server
+                $.ajax({ type: 'PUT', url: "http://"+window.location.host+":3000/participants", data: JSON.stringify(participants), contentType: 'application/json' });
+                console.log(participants);
+            //});
+         
+         });
+     }
+
+      // Get the state from the server
+      function getUpdatedState(){
+        $.getJSON( "http://"+window.location.host+":3000/event", function( event ) {
+          $("#event-name").not('.no-update').html( event.name ); //only update if the no-update class is not present
+	 });
+        $.getJSON( "http://"+window.location.host+":3000/participants", function( participants,status,xhr ) {
+	
+         // Display participants
+          
+          //var tbl=$("<table/>").attr("id","mytable");
+          //$("#div1").append(tbl);
+          //console.log(participants);
+          $("#tbody").empty();
+          for(var i=0;i<participants.length;i++)
+          {
+              var tr="<tr>";
+              var td1="<td>"+participants[i]["name"]+"</td>";
+              var td2="<td>"+getCategory(participants[i]["category"])+"</td></tr>";
+
+              $("#tbody").append(tr+td1+td2); 
+
+         } 
+
+        });
+      }
+
+      // Convert category integer to string
+      function getCategory(number){
+        switch(number){
+          case 1:
+            return "<1.35m";
+            break;
+          case 2:
+            return "1.35m-1.45m";
+            break;
+          case 3:
+            return "1.45m-1.65m";
+            break;
+          case 4:
+            return ">1.65m";
+            break;
+          default:
+            return "-";
+        }
+      }
+      // Resize when the window is first loaded
+      $(window).on('load', function () {
+         autoresize();
+         initialize();
+         handleVoegtoeEvents();
+         
+      });
+
+      // Resize when the window is resized
+      $(window).resize( autoresize );

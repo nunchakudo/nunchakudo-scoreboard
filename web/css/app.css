@@ -1,0 +1,90 @@
+body{
+	background: #cefdfe;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+[data-player="1"] .namefield-wrapper,
+[data-player="1"] .scoring-wrapper{
+	background: #FFFF00;
+	color: black;
+}
+
+[data-player="2"] .namefield-wrapper,
+[data-player="2"] .scoring-wrapper{
+	background: #000000;
+	color: white;
+}
+
+
+.namefield-wrapper{
+	border-top-left-radius: 2vh;
+	border-top-right-radius: 2vh;
+	border: .5vh solid #4c6969;
+}
+
+[data-player="1"] .namefield-wrapper{
+	border-bottom-right-radius: 2vh;
+}
+
+[data-player="2"] .namefield-wrapper{
+	border-bottom-left-radius: 2vh;
+}
+
+.namefields img{
+	max-width: 90%;
+	padding-bottom: 1vh;
+}
+
+.namefields [data-field="name"]{
+	font-size: 3.5vh;
+	font-weight: bold;
+}
+
+.namefields [data-player="1"] [data-field="logo"] img{
+	border-top-left-radius: 1vh;
+}
+
+.namefields [data-player="2"]  [data-field="logo"] img{
+	border-top-right-radius: 1vh;
+}
+
+.namefields [data-field="clubname"]{
+	font-size: 2.5vh;
+	font-weight: bold;
+}
+
+.scoring{
+	margin-top: -.5vh;
+}
+
+.scoring-wrapper{
+	border-bottom-left-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+	border-left: .5vh solid #4c6969;
+	border-right: .5vh solid #4c6969;
+	border-bottom: .5vh solid #4c6969;
+	
+	height: 80vh;
+}
+
+.scoring ul li{
+	font-size: 10vh;
+	line-height: 20vh;
+}
+
+.timefield-sizer{
+	height: 18.5vh;
+	position: relative;
+}
+
+.timefield-wrapper{
+	font-size: 8vh;
+	line-height: 8vh;
+	border-radius: 2vh;
+	width: 66%;
+	margin-left: 17%;
+	border: .5vh solid #4c6969;
+	position: absolute;
+	bottom: 0;
+}

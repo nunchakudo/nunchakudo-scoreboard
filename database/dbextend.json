@@ -1,0 +1,56 @@
+{
+  "event": {
+    "name": "FNB",
+    "nameYellow": "Yow",
+    "nameBlack": "Black"
+  },
+  "state": {
+    "timer": "started",
+    "currentTime": 1529662045143,
+    "matchTime": 150,
+    "score": {
+      "waza-ari": [
+        0,
+        0
+      ],
+      "ippon": [
+        0,
+        0
+      ],
+      "straf": [
+        0,
+        0
+      ]
+    }
+  },
+  "participants":[
+      {
+         "name": "deelnemer 1",
+         "category": 1
+      },
+      {
+         "name": "deelnemer 2",
+         "category": 1
+      },
+      {
+         "name": "deelnemer ",
+         "category": 1
+      }
+   ],
+  "matches":[
+      {
+         "nameYellow": "deelnemer 1",
+         "nameBlack": "deelnemer 2",
+         "category": 1,
+         "result" : "Black",
+         "done": 0
+      },
+      {
+         "nameYellow": "deelnemer 1",
+         "nameBlack": "deelnemer 3",
+         "category": 1,
+         "result" : "Yellow",
+         "done": 1
+      }
+   ]
+}

@@ -1,0 +1,26 @@
+{
+  "event": {
+    "name": "FNB",
+    "nameYellow": "Yellow",
+    "nameBlack": "Black"
+  },
+  "state": {
+    "timer": "paused",
+    "currentTime": 1529858937685,
+    "matchTime": 150,
+    "score": {
+      "waza-ari": [
+        1,
+        1
+      ],
+      "ippon": [
+        0,
+        1
+      ],
+      "straf": [
+        2,
+        2
+      ]
+    }
+  }
+}

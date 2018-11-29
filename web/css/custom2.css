@@ -1,0 +1,51 @@
+header {
+        height: 10vh;
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        clear: both;
+        overflow: hidden;
+        background: linear-gradient(90deg, #FFFF00 50%, #000000 50%);
+      }
+      footer {
+        height: 3vh;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        clear: both;
+        overflow: hidden;
+        background: linear-gradient(90deg, #FFFF00 50%, #000000 50%);
+      }
+      h1{
+ 	font-size:1em;
+	/*margin:.67em 0*/
+      }
+	h2{
+ 	font-size:1em;
+	color:black;
+	text-align: center;
+      }
+	h3{
+ 	font-size:1em;
+	color:yellow;
+	text-align: center;
+      }
+
+      #scoring .row > div{
+        /*background: green;*/
+        text-align: center;
+      }
+      #scoring .row > div:first-child{
+        /*background: red;*/
+        text-align: right;
+      }
+      #scoring .row > div:last-child{
+        /*background: blue;*/
+        text-align: left;
+      }

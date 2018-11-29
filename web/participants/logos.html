@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- participants list -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <style>
+      h1{
+        clear: none;
+      }
+    </style>
+
+  </head>
+  <body page="logos" style="font-size:50%;">
+    <header></header>
+    <div class="container-fluid">
+      <div class = "row">
+                <h2>logos</h2>
+      </div>
+    </div>
+      
+      <div id="logos">
+      <section id="toevoegen">
+        <div class="container">
+          <div class="card bg-faded mb-1">
+            <div class="card-body p-1">
+  
+   
+             <div class="row">
+                <div class="col-4"> <input type="text" class="form-control" id="name" placeholder="TEAMNAAM"> </div>
+                <div class="col-3"> <input type="file" class="form-control" id="clubimage"> </div>
+                <div class="col-5">
+					     <button class="btn btn-success" id="voeg-toe">voeg toe</button>
+                </div>
+            </div>
+            
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="logolijst">
+        <div class="container">
+          <div class="card bg-faded pt-3 pb-3">
+            <div class="card-body">
+              <table style="width: 100%; font-size:300%">
+                <thead>
+                   <tr>
+                        <th>Name</th>
+                        <th>image</th>
+                   </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+             </div>
+           </div>
+          </div>
+      </section>
+    </div>
+    
+    <footer></footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="../vendor/js/jquery-3.1.1.min.js"></script>
+    <script src="../vendor/js/tether.min.js"></script>
+    <script src="../vendor/js/bootstrap.min.js"></script>
+	<script src="../vendor/js/jquery.ui.widget.js"></script>
+    <script src="../vendor/js/jquery.fileupload.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="../js/logo-saver.js"></script>
+
+  </body>
+</html>
+

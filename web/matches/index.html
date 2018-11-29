@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- matches -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <style>
+      h1{
+        clear: none;
+      }
+    </style>
+
+  </head>
+  <body page="matches" style="font-size:50%;">
+    <header></header>
+    <div class="container-fluid">
+      <div class = "row">
+                <h2>matches</h2>
+      </div>
+    </div>
+      
+      <div id="matches">
+      <section id="toevoegen">
+        <div class="container-fluid">
+          <div class="card bg-faded mb-1">
+            <div class="card-body p-1">
+              <div class="row">
+                <div class="col-6">
+                   <select class="category" id="category" style="font-size:300%">
+                      <option selected>Choose...</option>
+                      <option value="1"><1.35m</option>
+                      <option value="2">1.35m-1.45m</option>
+                      <option value="3">1.45m-1.65m</option>
+                      <option value="4">>1.65m</option>
+                   </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                 <button class="btn btn-success" id="calculate">bereken matches</button>
+                </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="matchesCategory">
+        <div class="container-fluid">
+          <div class="card bg-faded mb-1">
+            <div class="card-body p-1">
+              <div class="row">
+                 <div class="col-6">
+                   <select class="category" id="showcategory" style="font-size:300%"$
+                      <option selected>Choose...</option>
+                      <option value="1"><1.35m</option>
+                      <option value="2">1.35m-1.45m</option>
+                      <option value="3">1.45m-1.65m</option>
+                      <option value="4">>1.65m</option>
+                   </select>
+                 </div>
+              </div>
+              <div class="row">
+              <div class="col-12">
+               <table style="width: 100%; font-size:300%">
+                 <thead>
+                   <tr>
+                        <th>Name</th>
+                        <th>Name</th>
+			<th>Played</th>
+                        <th>Result</th>
+                   </tr>
+                 </thead>
+                 <tbody id="tbody"></tbody>
+               </table>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <footer></footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="../vendor/js/jquery-3.1.1.min.js"></script>
+    <script src="../vendor/js/tether.min.js"></script>
+    <script src="../vendor/js/bootstrap.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="../js/custom.js"></script>
+    <script src="../js/matches.js"></script>
+
+  </body>
+</html>

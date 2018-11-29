@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- participants list -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <style>
+      h1{
+        clear: none;
+      }
+    </style>
+
+  </head>
+  <body page="participants" style="font-size:50%;">
+    <header></header>
+    <div class="container-fluid">
+      <div class = "row">
+                <h2>deelnemers</h2>
+      </div>
+    </div>
+      
+      <div id="deelnemers">
+      <section id="toevoegen">
+        <div class="container">
+          <div class="card bg-faded mb-1">
+            <div class="card-body p-1">
+  
+   
+             <div class="row">
+                <div class="col-5"> <input type="text" class="form-control" id="name" placeholder="NAAM"> </div>
+                <div class="col-5">
+                   <select class="form-control category" id="category">
+                      <option value=0 selected>Choose...</option>
+                      <option value=1><1.35m H</option>
+                      <option value=2>1.35m-1.45m H</option>
+                      <option value=3>1.45m-1.65m H</option>
+                      <option value=4>1.65m-1.75m H</option>
+                      <option value=5>1.75m-1.85m H</option>
+                      <option value=6>>1.85m H</option>
+                      <option value=11><1.35m D</option>
+                      <option value=12>1.35m-1.45m D</option>
+                      <option value=13>1.45m-1.65m D</option>
+                      <option value=14>1.65m-1.75m D</option>
+                      <option value=15>1.75m-1.85m D</option>
+                      <option value=16>>1.85m D</option>
+                   </select>
+                </div>
+                <div class="col-2"> <input type="text" class="form-control grade" id="grade" placeholder="Grade"> </div>
+            </div>
+            <div class="row">
+                <div class="col pt-2">
+                 <button class="btn btn-success" id="voeg-toe">voeg toe</button>
+                </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="deelnemerslijst">
+        <div class="container">
+          <div class="card bg-faded pt-3 pb-3">
+            <div class="card-body">
+              <table style="width: 100%; font-size:300%">
+                <thead>
+                   <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Grade</th>
+                   </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+             </div>
+           </div>
+          </div>
+      </section>
+    </div>
+    
+    <footer></footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="../vendor/js/jquery-3.1.1.min.js"></script>
+    <script src="../vendor/js/tether.min.js"></script>
+    <script src="../vendor/js/bootstrap.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="../js/custom.js"></script>
+    <script src="../js/participants.js"></script>
+
+  </body>
+</html>

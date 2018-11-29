@@ -1,0 +1,139 @@
+{
+  "event": {
+    "name": "VERGADERING",
+    "nameYellow": "deelnemer 1",
+    "nameBlack": "deelnemer 2",
+    "isTrusted": true
+  },
+  "state": {
+    "timer": "paused",
+    "currentTime": 1541007128915,
+    "matchTime": 5,
+    "extraTime": 0,
+    "score": {
+      "waza-ari": [
+        1,
+        0
+      ],
+      "ippon": [
+        2,
+        0
+      ],
+      "straf": [
+        2,
+        0
+      ]
+    }
+  },
+  "participants": [
+    {
+      "id": 1,
+      "name": "deelnemer 1",
+      "category": 1
+    },
+    {
+      "id": 2,
+      "name": "deelnemer 2",
+      "category": 1
+    },
+    {
+      "id": 3,
+      "name": "deelnemer 3",
+      "category": 1
+    },
+    {
+      "name": "Tom",
+      "category": 4,
+      "id": 5
+    },
+    {
+      "name": "Jef",
+      "category": 4,
+      "id": 6
+    },
+    {
+      "name": "Piet",
+      "category": 2,
+      "id": 7
+    },
+    {
+      "name": "Wouter",
+      "category": 4,
+      "id": 11
+    },
+    {
+      "name": "jaak",
+      "category": 5,
+      "grade": 10,
+      "id": 12
+    }
+  ],
+  "teams": [
+    {
+      "teamName": "TESTERS",
+      "teamLogo": "http://localhost:9000/nuncha/nunchaku.jpg",
+      "id": 1
+    },
+    {
+      "teamName": "NUNTEAM",
+      "teamLogo": "http://localhost:9000/nuncha/nunchaku.jpg",
+      "id": 2
+    },
+    {
+      "teamName": "NUNTEAM",
+      "teamLogo": "http://localhost:9000/nuncha/nunchaku.jpg",
+      "id": 3
+    },
+    {
+      "teamName": "nunteam 2",
+      "teamLogo": "http://localhost:9000/nuncha/nunchaku.jpg",
+      "id": 4
+    },
+    {
+      "teamName": "test test ",
+      "teamLogo": "http://localhost:9000/nuncha/nunchaku.jpg",
+      "id": 5
+    },
+    {
+      "teamName": "test test ",
+      "teamLogo": "http://localhost:9000/nuncha/nunchaku.jpg",
+      "id": 6
+    },
+    {
+      "teamName": "pokemon",
+      "teamLogo": "http://localhost:9000/nuncha/nunchaku.jpg",
+      "id": 7
+    },
+    {
+      "teamName": "TEAM TOM",
+      "teamLogo": "http://localhost:9000/nuncha/download.jpeg",
+      "id": 8
+    }
+  ],
+  "matches": [
+    {
+      "nameYellow": "deelnemer 1",
+      "nameBlack": "deelnemer 2",
+      "category": 1,
+      "result": "Black",
+      "done": 0,
+      "id": 1
+    },
+    {
+      "nameYellow": "deelnemer 1",
+      "nameBlack": "deelnemer 3",
+      "category": 1,
+      "result": "Yellow",
+      "done": 1,
+      "id": 2
+    },
+    {
+      "nameYellow": "Tom",
+      "nameBlack": "Jef",
+      "category": "4",
+      "result": "none",
+      "done": 0,
+      "id": 3
+    }
+  ]
+}
